@@ -16,21 +16,14 @@
         android:layout_marginTop="87dp"
         android:src="@drawable/upload" />
 
-    <Button
-        android:id="@+id/upload_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/addImage"
-        android:layout_centerHorizontal="true"
-        android:backgroundTint="@color/teal_200"
-        android:text="Select Image" />
+
     <LinearLayout
         android:id="@+id/linear_layout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:layout_marginLeft="15dp"
-        android:layout_below="@+id/upload_button">
+        android:layout_below="@+id/linear_layout2">
         <TextView
             android:id="@+id/nothing"
             android:layout_width="wrap_content"
@@ -64,5 +57,35 @@
         android:textColor="@color/white"
         android:layout_marginLeft="20dp"
         />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:id="@+id/linear_layout2"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addImage"
+        android:layout_centerHorizontal="true"
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Camera"
+            android:backgroundTint="@color/teal_200"
+            android:layout_toRightOf="@+id/upload_button"
+            android:gravity="center"
+            android:id="@+id/uploadImageUsingCamera"
+            android:layout_margin="20dp"
+            />
+        <Button
+            android:id="@+id/upload_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/addImage"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="@color/teal_200"
+            android:layout_margin="20dp"
+            android:text="Gallery" />
+
+    </LinearLayout>
+
 
 </RelativeLayout>
